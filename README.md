@@ -1,5 +1,7 @@
 ## 零配置, 无侵入式的小程序开发工具
 
+* Issue: 现在把babel-runtime打包进代码中会出现找不到包的错误，必须项目本地安装了babel-runtime才行 *
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/webuild.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/axetroy/webuild.svg?branch=master)](https://travis-ci.org/axetroy/webuild)
 [![Dependency](https://david-dm.org/axetroy/webuild.svg)](https://david-dm.org/axetroy/webuild)
