@@ -25,16 +25,17 @@ async function webpack(webpackConfig) {
 }
 
 const WEBPACK_CONFIG = {
+  mode: process.env.NODE_ENV || "development",
   resolve: {
     modules: ["node_modules"],
     extensions: [".js", ".jsx"]
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(jsx|js)?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "babel-loader"
+        use: "babel-loader"
       }
     ]
   },
@@ -50,7 +51,8 @@ const WEBPACK_CONFIG = {
   node: {
     global: false,
     process: false
-  }
+  },
+  devtool: "source-map"
 };
 
 const BABEL_OPTIONS = {
