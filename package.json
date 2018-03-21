@@ -53,6 +53,7 @@
     "imagemin-svgo": "^6.0.0",
     "imagemin-webp": "^4.1.0",
     "postcss": "^6.0.16",
+    "postcss-each": "^0.10.0",
     "precss": "^2.0.0",
     "pretty-data": "^0.40.0",
     "uglifyjs-webpack-plugin": "^1.1.8",

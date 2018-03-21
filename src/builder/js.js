@@ -19,7 +19,6 @@ async function webpack(webpackConfig) {
   if (stats.hasErrors()) {
     return Promise.reject(msg);
   } else {
-    console.log(msg);
     return stats;
   }
 }
@@ -28,7 +27,10 @@ const WEBPACK_CONFIG = {
   mode: process.env.NODE_ENV || "development",
   resolve: {
     modules: ["node_modules"],
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx"],
+    alias: {
+      "@": path.join(process.cwd(), "src")
+    }
   },
   module: {
     rules: [

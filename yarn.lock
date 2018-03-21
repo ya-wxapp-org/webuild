@@ -4884,6 +4884,13 @@ postcss-discard-unused@^2.2.1:
     postcss "^5.0.14"
     uniqs "^2.0.0"
 
+postcss-each@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/postcss-each/-/postcss-each-0.10.0.tgz#0877c6aea504bffd8a5d1f789d47d06a3e5feea1"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-simple-vars "^4.0.0"
+
 postcss-extend@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/postcss-extend/-/postcss-extend-1.0.5.tgz#5ea98bf787ba3cacf4df4609743f80a833b1d0e7"
@@ -5084,7 +5091,7 @@ postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.2.2, postcss-selector
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-simple-vars@^4.1.0:
+postcss-simple-vars@^4.0.0, postcss-simple-vars@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/postcss-simple-vars/-/postcss-simple-vars-4.1.0.tgz#043248cfef8d3f51b3486a28c09f8375dbf1b2f9"
   dependencies:
